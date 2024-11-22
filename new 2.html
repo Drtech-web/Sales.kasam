@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Quattrocento+Sans&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kasam Fashions Pvt. Ltd.</title>
+    <!-- Import Bebas Neue font from custom @font-face -->
+    <style>
+        /* latin-ext */
+        @font-face {
+            font-family: 'Bebas Neue';
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/bebasneue/v14/JTUSjIg69CK48gW7PXoo9Wdhyzbi.woff2) format('woff2');
+            unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+        }
+
+        /* latin */
+        @font-face {
+            font-family: 'Bebas Neue';
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/bebasneue/v14/JTUSjIg69CK48gW7PXoo9Wlhyw.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+
+        /* Apply Bebas Neue font to h1 */
+        .content h1 {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 2em;
+            margin: -30px 0;
+            width: 100%;
+            text-align: left;
+            transition: transform 0.3s ease;
+            white-space: nowrap;
+        }
+
+        /* Define Bank Gothic Medium font */
+        @font-face {
+            font-family: 'Bank Gothic Medium';
+            src: url('fonts/bankgothic.ttf') format('truetype');
+        }
+
+        body {
+            font-family: 'Work Sans', sans-serif;
+            font-size: 20px;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: url('https://raw.githubusercontent.com/Drtech-web/Sales.kasam/142ac67eb49d503c083755f2d00f7f6df97b634f/pixelcut-export.png') no-repeat center center;
+            background-size: cover;
+            color: #fff;
+        }
+
+        .header {
+            width: 100%;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            background-color: transparent;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: relative; /* Added to position logos inside the header */
+        }
+
+        .header img {
+            height: 110px;
+            width: auto;
+            margin-left: 2cm;
+        }
+
+        /* New logo positioned at the top right */
+        .header .logo-right {
+            position: absolute;
+            top: 20px; /* Distance from the top */
+            right: 100px; /* Distance from the right edge */
+            height: 150px; /* Set the height */
+            width: auto; /* Automatically adjust width */
+        }
+
+        .header .text {
+            margin-left: 2cm;
+        }
+
+        .logo-text {
+            margin-top: 0.2cm; /* Adds 0.2cm gap above the logo text */
+            margin-left: -20cm; /* Adds 20cm margin on the left */
+            margin-right: 2cm; /* Adds 2cm margin on the right */
+            text-align: left; /* Aligns the text to the left */
+            font-size: 1em; /* Adjust font size as needed */
+            width: 30%;
+            font-family: 'Quattrocento Sans', serif; /* Apply Quattrocento Sans font style */
+            font-weight: normal; /* Use normal font weight (can be changed to bold if needed) */
+            letter-spacing: 1px; /* Adds spacing between letters (optional) */
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            width: 80%;
+            height: 80vh;
+            margin-top: 20px;
+            background-color: transparent;
+            border-radius: 10px;
+            padding: 20px;
+        }
+
+        .content {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .form-container {
+            flex: 1;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 20px;
+        }
+
+        iframe {
+            width: 600px;
+            height: 100%;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: transparent;
+            margin-top: -5cm;
+        }
+
+        .content .red {
+            color: red;
+        }
+
+        /* Add styling for .logo-text */
+        .logo-text {
+            margin-top: 1cm; /* Adds 1cm gap below the logo */
+            text-align: left; /* Ensures text is left-aligned */
+            font-size: 1em; /* Adjust font size as needed */
+            width: 30%;
+            transform-origin: -10cm; /* Scale from the left */
+            white-space: normal; /* Allows wrapping of long text */
+            word-wrap: break-word; /* Ensures text will wrap if it's too long for the container */
+        }
+
+        /* Style for footer */
+        .footer {
+            width: 100%;
+            text-align: center;
+            padding: 10px 0;
+            position: absolute;
+            bottom: -6.8cm;
+            background-color:transparent;
+            color: white;
+            font-family: 'Arial', Sans-serif;
+            font-size: 0.6em;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <img src="https://www.dropbox.com/scl/fi/3w8cuktwjostzrb21pafw/LOGO-2.png?rlkey=crkvpkwg128csjf52s565avoa&st=dy7zltb9&dl=1" alt="Logo">
+        <div class="text">
+            <h1>K<span class="red">A</span>SAM FASHIONS</h1>
+            <p>We 🩷 Fashion & Fashion at Kasam</p>
+        </div>
+        <!-- Second logo positioned at the top right -->
+        <img class="logo-right" src="https://www.dropbox.com/scl/fi/8n08m4s9iy1l8vjyu37yk/logo-1.png?rlkey=z3hw3y4b9ckybif0verauceub&st=vxeg9atg&dl=1" alt="Logo">
+    </div>
+
+    <!-- Text below the logo -->
+    <div class="logo-text">
+        <p>At Kasam Fashions, we believe that great teams turn visions into reality, one collaborative step at a time!</p>
+    </div>
+
+    <div class="container">
+        <div class="form-container">
+            <iframe src="https://forms.gle/aENyNU8NdPkXomga6" title="Google Form"></iframe>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        Kasam Fashions Private Limited.
+    </div>
+
+</body>
+</html>
